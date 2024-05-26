@@ -1,0 +1,324 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Yugothic";
+  color: #432;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+p {
+  font-size: 1rem;
+  margin-top: 30px;
+}
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #432;
+}
+
+p span {
+  display: inline-block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* ヘッダー
+---------------------------------------------- */
+#main {
+  background-color: rgb(233, 251, 254);
+}
+
+/* レスポンシブ用ハンバーガーメニュー */
+.hamburger {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hamburger .btn-gNav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 12;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.hamburger .btn-gNav span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #432;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.hamburger .btn-gNav span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger .btn-gNav span:nth-child(2) {
+  top: 10px;
+}
+
+.hamburger .btn-gNav span:nth-child(3) {
+  top: 20px;
+}
+
+.hamburger .btn-gNav.open span:nth-child(1) {
+  background: #ffffff;
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger .btn-gNav.open span:nth-child(2),
+.hamburger .btn-gNav.open span:nth-child(3) {
+  top: 6px;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-gNav {
+  display: none;
+}
+
+.gNav .gNav-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.gNav-menu li a:hover {
+  color: rgb(137, 158, 162);
+}
+
+/* main-content */
+.main-content {
+  height: 450px;
+  margin: 10%;
+}
+
+/* ボタン */
+.button {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgb(157, 182, 187);
+  border-radius: 50px;
+  width: 200px;
+  padding: 15px 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+.button:hover {
+  background-color: rgb(137, 158, 162);
+}
+/* サービス
+--------------------------------------------- */
+
+.service-title {
+  text-align: center;
+}
+
+.container {
+  margin: 10% auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container .item {
+  width: 240px;
+  text-align: center;
+}
+.icon {
+  font-size: 4rem;
+  color: rgb(137, 158, 162);
+  padding: 1vw;
+}
+
+/* about
+---------------------------------------- */
+
+.about-title h3 {
+  font-weight: normal;
+  margin: 0;
+}
+.about-content p {
+  line-height: 6;
+}
+.about-title {
+  margin-top: 10%;
+}
+.grid .img {
+  width: 170px;
+  height: 270px;
+  color: #fff;
+  background-color: rgb(137, 158, 162);
+}
+.grid {
+  display: flex;
+  color: #fff;
+  gap: 10px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20%;
+}
+
+/* メディアクエリ
+-------------------------------------------------------- */
+@media (max-width: 768px) {
+  .hamburger {
+    margin: 0 75px;
+  }
+  .gNav .gNav-menu {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .gNav-menu li {
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  #main {
+    height: 500px;
+  }
+  /* サービス */
+  #service {
+    margin: 10% 70px;
+  }
+  /*about */
+  .about-content {
+    margin: 0 70px;
+    flex-wrap: wrap;
+  }
+  .grid .img {
+    width: 200px;
+    height: 300px;
+  }
+  .grid {
+    gap: 12px;
+    margin: 0 auto;
+  }
+}
+
+/* メディアクエリスマホ用 */
+@media (max-width: 600px) {
+  p {
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  /* hamberger */
+  .hamburger {
+    margin: 0 40px;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .btn-gNav {
+    display: block;
+  }
+  .gNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 1;
+    padding-top: 50px;
+    transition: 0.3s;
+  }
+  .gNav.open {
+    right: 0;
+  }
+  .gNav .gNav-menu {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    /*justify-content: center;*/
+  }
+  .gNav .gNav-menu li {
+    width: 86%;
+    padding: 15px;
+    border-bottom: #525252 1px solid;
+  }
+  /* service */
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30%;
+  }
+  .item {
+    margin-bottom: 30%;
+  }
+  /* about */
+  article {
+    margin-top: 20%;
+  }
+  .about-content {
+    flex-wrap: wrap;
+  }
+  .about-content h3 {
+    font-size: 1rem;
+  }
+  .about-title p {
+    line-height: 2;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .grid .img {
+    width: 300px;
+    height: 340px;
+  }
+
+  .image-container {
+    gap: 15px;
+    margin: 0 -1px;
+  }
+}
