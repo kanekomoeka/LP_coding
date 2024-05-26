@@ -13,9 +13,9 @@
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <div id="main">
+    <div id="home">
       <div class="hamburger wrapper">
-        <div class="logo">LOGO</div>
+        <div class="logo"><a href="index.html">LOGO</a></div>
         <p class="btn-gNav">
           <span></span>
           <span></span>
@@ -23,17 +23,16 @@
         </p>
         <nav class="gNav">
           <ul class="gNav-menu">
-            <li><a href="home.html">home</a></li>
-            <li><a href="about.html">service</a></li>
-            <li><a href="service.html">about</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="produce.html">produce</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#service">service</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#aboutus">team</a></li>
+            <li><a href="#produce">produce</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </div>
-
-      <div class="main-content wrapper">
+      <div class="main-content wrapper" id="#home">
         <h2 class="home-title">
           Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.
         </h2>
@@ -47,72 +46,70 @@
         <a class="button" href="coll.html">COLL TO ACTION</a>
       </div>
     </div>
-
-    <div id="service">
-      <article>
-        <div class="service-title">
-          <h2>We provide great service</h2>
+    <!-- /home -->
+    <article>
+      <div class="service-title" id="service">
+        <h2>We provide great service</h2>
+        <p>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum
+            dolor</span
+          ><span>sit amet consectetur adipisicing.</span>
+        </p>
+      </div>
+      <div class="container wrapper">
+        <div class="item">
+          <i class="fa-solid fa-pencil icon"></i>
+          <h3>item1</h3>
           <p>
-            <span
-              >Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum
-              dolor</span
-            ><span>sit amet consectetur adipisicing.</span>
+            <span>Lorem ipsum</span><span>dolor sit amet</span
+            ><span>consectetur adipisicing.</span>
           </p>
         </div>
-        <div class="container wrapper">
-          <div class="item">
-            <i class="fa-solid fa-pencil icon"></i>
-            <h3>item1</h3>
-            <p>
-              <span>Lorem ipsum</span><span>dolor sit amet</span
-              ><span>consectetur adipisicing.</span>
-            </p>
-          </div>
-          <div class="item">
-            <i class="fa-solid fa-brush icon"></i>
-            <h3>item2</h3>
-            <p>
-              <span>Lorem ipsum</span><span>dolor sit amet</span
-              ><span>consectetur adipisicing.</span>
-            </p>
-          </div>
-          <div class="item">
-            <i class="fa-solid fa-print icon"></i>
-            <h3>item3</h3>
-            <p>
-              <span>Lorem ipsum</span><span>dolor sit amet</span
-              ><span>consectetur adipisicing.</span>
-            </p>
-          </div>
-          <div class="item">
-            <i class="fa-solid fa-scissors icon"></i>
-            <h3>item4</h3>
-            <p>
-              <span>Lorem ipsum</span><span>dolor sit amet</span
-              ><span>consectetur adipisicing.</span>
-            </p>
-          </div>
+        <div class="item">
+          <i class="fa-solid fa-brush icon"></i>
+          <h3>item2</h3>
+          <p>
+            <span>Lorem ipsum</span><span>dolor sit amet</span
+            ><span>consectetur adipisicing.</span>
+          </p>
         </div>
-      </article>
-    </div>
-    <div id="about ">
-      <section>
-        <div class="about-content wrapper">
-          <div class="about-title">
-            <h2>Jonatan Doe</h2>
-            <h3>director</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing
-              <span>elit.</span>
-            </p>
-          </div>
-          <div class="grid">
-            <div class="img">image1</div>
-            <div class="img">image2</div>
-            <div class="img">image3</div>
-          </div>
+        <div class="item">
+          <i class="fa-solid fa-print icon"></i>
+          <h3>item3</h3>
+          <p>
+            <span>Lorem ipsum</span><span>dolor sit amet</span
+            ><span>consectetur adipisicing.</span>
+          </p>
         </div>
-      </section>
-    </div>
+        <div class="item">
+          <i class="fa-solid fa-scissors icon"></i>
+          <h3>item4</h3>
+          <p>
+            <span>Lorem ipsum</span><span>dolor sit amet</span
+            ><span>consectetur adipisicing.</span>
+          </p>
+        </div>
+      </div>
+    </article>
+    <!-- /article -->
+    <section>
+      <div class="about-content wrapper" id="about">
+        <div class="about-title">
+          <h2>Jonatan Doe</h2>
+          <h3>director</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing
+            <span>elit.</span>
+          </p>
+        </div>
+        <div class="grid">
+          <div class="img">image1</div>
+          <div class="img">image2</div>
+          <div class="img">image3</div>
+        </div>
+      </div>
+    </section>
+    <!-- /section -->
   </body>
 </html>
