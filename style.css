@@ -42,7 +42,7 @@ p span {
 }
 /* ヘッダー
 ---------------------------------------------- */
-#main {
+#home {
   background-color: rgb(233, 251, 254);
 }
 
@@ -119,7 +119,9 @@ p span {
   justify-content: space-between;
   gap: 30px;
 }
-
+.gNav .gNav-menu li a {
+  text-transform: uppercase;
+}
 .gNav-menu li a:hover {
   color: rgb(137, 158, 162);
 }
