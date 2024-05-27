@@ -121,6 +121,7 @@ p span {
 }
 .gNav .gNav-menu li a {
   text-transform: uppercase;
+  color: #fff;
 }
 .gNav-menu li a:hover {
   color: rgb(137, 158, 162);
@@ -164,6 +165,9 @@ p span {
   width: 240px;
   text-align: center;
 }
+.container .item .p {
+  word-break: break-all;
+}
 .icon {
   font-size: 4rem;
   color: rgb(137, 158, 162);
@@ -178,7 +182,7 @@ p span {
   margin: 0;
 }
 .about-content p {
-  line-height: 6;
+  line-height: 2;
 }
 .about-title {
   margin-top: 10%;
@@ -203,6 +207,21 @@ p span {
 
 /* メディアクエリ
 -------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .hamburger {
+    justify-content: space-around;
+  }
+  .container {
+    margin: 10% 9%;
+  }
+  .container .item {
+    width: 200px;
+  }
+  section {
+    margin: 10%;
+  }
+}
+
 @media (max-width: 768px) {
   .hamburger {
     margin: 0 75px;
@@ -225,7 +244,6 @@ p span {
   }
   /*about */
   .about-content {
-    margin: 0 70px;
     flex-wrap: wrap;
   }
   .grid .img {
@@ -304,9 +322,6 @@ p span {
   }
   .about-content h3 {
     font-size: 1rem;
-  }
-  .about-title p {
-    line-height: 2;
   }
 
   .grid {
