@@ -1,63 +1,69 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Yugothic";
-  color: #432;
-  line-height: 1.5;
+ul,
+li {
+  list-style: none;
 }
 
-h2 {
-  font-size: 1.7rem;
-}
-h3 {
-  font-size: 1.3rem;
-  margin-top: 30px;
-}
-p {
-  font-size: 1rem;
-  margin-top: 30px;
-}
-ol,
-ul {
-  list-style: none;
-  list-style-type: none;
-}
 a {
   text-decoration: none;
   color: #432;
 }
-
-p span {
-  display: inline-block;
+body,
+i {
+  font-size: 16px;
+  font-style: normal;
+  color: #432;
+}
+.hamburger,
+.main-inner,
+.service-inner,
+.about-inner,
+.team-inner,
+.produce-inner,
+.contact-inner,
+.end-content {
+  margin: 0 10vw;
+}
+header,
+.main-visual,
+.team-content,
+.contact-content {
+  background-color: rgb(224, 247, 252);
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+.title {
+  font-size: 2rem;
+  font-weight: bold;
 }
-/* ヘッダー
----------------------------------------------- */
-#home {
-  background-color: rgb(233, 251, 254);
+.text {
+  font-size: 1rem;
+  margin-top: 3%;
+  font-weight: normal;
+}
+.inner-text {
+  text-align: center;
+  line-height: 1;
 }
 
-/* レスポンシブ用ハンバーガーメニュー */
+/* header
+---------------------------------- */
 .hamburger {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  align-items: center;
 }
-
 .logo {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
-
 .hamburger .btn-gNav {
   position: fixed;
   top: 20px;
@@ -117,154 +123,159 @@ p span {
 .gNav .gNav-menu {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 .gNav .gNav-menu li a {
-  text-transform: uppercase;
-  color: #fff;
-}
-.gNav-menu li a:hover {
-  color: rgb(137, 158, 162);
-}
-
-/* main-content */
-.main-content {
-  height: 450px;
-  margin: 10%;
-}
-
-/* ボタン */
-.button {
-  display: block;
   font-size: 1rem;
   text-transform: uppercase;
+  color: #432;
+}
+.gNav-menu li a:hover {
+  text-decoration: underline;
+}
+
+header {
+  min-height: 7vw;
+}
+/* main-visual
+------------------------------------- */
+.main-inner-text {
+  padding: 10% 0;
+}
+/* button */
+.button {
+  display: block;
   color: #fff;
-  background: rgb(157, 182, 187);
+  background: rgb(137, 158, 162);
+  text-transform: uppercase;
+  padding: 10px 20px;
   border-radius: 50px;
-  width: 200px;
-  padding: 15px 10px;
+  width: 180px;
   text-align: center;
-  margin-top: 40px;
-}
-.button:hover {
-  background-color: rgb(137, 158, 162);
-}
-/* サービス
---------------------------------------------- */
-
-.service-title {
-  text-align: center;
-}
-
-.container {
-  margin: 10% auto;
-  display: flex;
-  justify-content: space-between;
-}
-.container .item {
-  width: 240px;
-  text-align: center;
-}
-.container .item .p {
-  word-break: break-all;
-}
-.icon {
-  font-size: 4rem;
-  color: rgb(137, 158, 162);
-  padding: 1vw;
-}
-
-/* about
----------------------------------------- */
-
-.about-title h3 {
-  font-weight: normal;
-  margin: 0;
-}
-.about-content p {
-  line-height: 2;
-}
-.about-title {
   margin-top: 10%;
 }
-.grid .img {
-  width: 170px;
-  height: 270px;
-  color: #fff;
-  background-color: rgb(137, 158, 162);
+.button:hover {
+  background-color: rgb(96, 125, 130);
 }
-.grid {
+i {
+  font-size: 10rem;
+  margin: 0 auto;
+  color: rgb(137, 158, 162);
+}
+.main-inner {
   display: flex;
-  color: #fff;
-  gap: 10px;
+  align-items: center;
+  gap: 15%;
 }
-
+.main-inner .inner-text-left {
+  width: 50%;
+}
+/* section1,4 ----------------------------*/
+.item i {
+  display: block;
+  font-size: 3.5rem;
+  color: rgb(137, 158, 162);
+  padding: 10px;
+}
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.item {
+  text-align: center;
+  margin-top: 5%;
+}
+/* section1
+--------------------- */
+.service-inner .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5vw;
+  margin-top: 10%;
+}
+.service-content {
+  margin-top: 15%;
+}
+/* section4
+--------------------- */
+.produce-inner .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5vw;
+  margin: 10% 0;
+}
+.produce-inner {
+  padding: 10% 0;
+}
+/* section2
+---------------------------------------------*/
 .about-content {
+  margin-top: 15%;
+}
+.inner-text-left {
+  max-width: 30vw;
+}
+.about-image {
+  display: flex;
+}
+.about-image .people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  width: 13vw;
+  height: 13vw;
+  color: rgb(137, 158, 162);
+  background-color: rgb(233, 251, 254);
+}
+.about-image .people:nth-child(2) {
+  background-color: #fff;
+}
+.about-inner {
   display: flex;
   justify-content: space-between;
-  margin-top: 20%;
+  align-items: flex-end;
+  margin-top: 15%;
+  padding-bottom: 10%;
 }
 
+/* section3
+------------------------------------------------ */
+.team-inner {
+  padding: 10% 0;
+}
+.play {
+  display: block;
+  text-align: center;
+  font-size: 4em;
+  color: rgb(137, 158, 162);
+  margin-top: 5%;
+}
+
+/*seciton-5
+-------------------------------------------------*/
+.contact-inner {
+  padding: 15% 0;
+}
+.inner-text-logo i {
+  font-size: 1rem;
+}
+.inner-text-logo {
+  margin-bottom: 2%;
+}
+
+/*section-6
+----------------------------------------------------------------*/
+.end-inner {
+  padding: 18% 0;
+}
+.end-content .button {
+  margin: 2% auto;
+}
 /* メディアクエリ
--------------------------------------------------------- */
-@media (max-width: 1024px) {
-  .hamburger {
-    justify-content: space-around;
-  }
-  .container {
-    margin: 10% 9%;
-  }
-  .container .item {
-    width: 200px;
-  }
-  section {
-    margin: 10%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    margin: 0 75px;
-  }
-  .gNav .gNav-menu {
-    font-size: 0.8rem;
-    margin-top: 10px;
-    gap: 10px;
-  }
-  .gNav-menu li {
-    margin: 0 auto;
-    padding: 0 5px;
-  }
-  #main {
-    height: 500px;
-  }
-  /* サービス */
-  #service {
-    margin: 10% 70px;
-  }
-  /*about */
-  .about-content {
-    flex-wrap: wrap;
-  }
-  .grid .img {
-    width: 200px;
-    height: 300px;
-  }
-  .grid {
-    gap: 12px;
-    margin: 0 auto;
-  }
-}
-
-/* メディアクエリスマホ用 */
+------------------------------------------------------------------ */
 @media (max-width: 600px) {
-  p {
-    font-size: 0.8rem;
-  }
-  h2 {
-    font-size: 1.4rem;
-  }
-  /* hamberger */
+  /* hamberger--------------------------- */
   .hamburger {
     margin: 0 40px;
   }
@@ -279,8 +290,8 @@ p span {
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 16px;
     box-sizing: border-box;
     z-index: 1;
@@ -300,42 +311,121 @@ p span {
     /*justify-content: center;*/
   }
   .gNav .gNav-menu li {
-    width: 86%;
     padding: 15px;
     border-bottom: #525252 1px solid;
   }
-  /* service */
-  .container {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30%;
+  .gNav .gNav-menu li a {
+    text-transform: uppercase;
+    color: #fff;
   }
-  .item {
-    margin-bottom: 30%;
+  /* all-------------------------------- */
+  .title {
+    font-size: 0.7rem;
   }
-  /* about */
-  article {
-    margin-top: 20%;
+  .text {
+    font-size: 0.5rem;
+    margin-top: 3%;
   }
-  .about-content {
-    flex-wrap: wrap;
-  }
-  .about-content h3 {
+  .item i {
     font-size: 1rem;
   }
 
-  .grid {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
+  /* main-visual------------------------ */
+  .hamburger {
+    padding-top: 0px;
   }
-  .grid .img {
-    width: 300px;
-    height: 340px;
+  .main-inner {
+    flex-wrap: wrap;
+  }
+  .main-inner .title {
+    margin-top: 10%;
+  }
+  .main-inner i {
+    font-size: 3rem;
+    margin: 10% 80% 10% 0;
+  }
+  .button {
+    margin-top: 5%;
+    height: 30px;
+    width: 180px;
+    padding: 5px 20px;
   }
 
-  .image-container {
-    gap: 15px;
-    margin: 0 -1px;
+  /* section-1------------------------ */
+  .service-inner .item .text {
+    font-size: 0.6rem;
+  }
+  /* section-2------------------------ */
+  #section-2 {
+    max-height: 35vh;
+    margin-top: 20%;
+  }
+  .about-inner .inner-text-left {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+  .about-inner {
+    display: block;
+  }
+  .about-image {
+    margin-top: 10%;
+  }
+  .about-image .people {
+    font-size: 3rem;
+    width: 16vw;
+    height: 16vw;
+  }
+  /* section-3------------------------ */
+  .team-inner .play {
+    font-size: 2em;
+  }
+  /* section-6------------------------ */
+  .end-content {
+    padding: 15% 0;
+  }
+}
+/* tablet------------------------------------------ */
+@media (max-width: 768px) {
+  /* all */
+  .title {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
+  .item i {
+    font-size: 3rem;
+  }
+
+  /* header----------------
+   */
+  .gNav .gNav-menu {
+    gap: 10px;
+  }
+  .gNav .gNav-menu li a {
+    font-size: 0.8rem;
+  }
+  .logo {
+    margin-bottom: 10%;
+  }
+  .gNav {
+    margin-bottom: 10%;
+  }
+  /* main */
+  .button {
+    margin-bottom: 10%;
+  }
+  /* secttion-2 */
+  .about-inner {
+    margin: 10%;
+  }
+  /* section-3------------------------ */
+  .team-inner .play {
+    font-size: 2em;
+    margin: 10px;
+  }
+  /* section-6------------------------ */
+  .end-content {
+    padding: 4%;
   }
 }
