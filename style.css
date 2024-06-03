@@ -151,7 +151,7 @@ header {
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 50px;
-  width: 180px;
+  width: 200px;
   text-align: center;
   margin-top: 10%;
 }
@@ -348,7 +348,6 @@ i {
   .button {
     margin-top: 5%;
     height: 30px;
-    width: 180px;
     padding: 5px 20px;
   }
 
