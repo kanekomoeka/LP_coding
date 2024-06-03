@@ -146,6 +146,7 @@ header {
 .button {
   display: block;
   color: #fff;
+  font-size: 0.8rem;
   background: rgb(137, 158, 162);
   text-transform: uppercase;
   padding: 10px 20px;
